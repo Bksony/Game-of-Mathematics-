@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Reading Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🔮 Mind Reader</h1>
+        <p class="subtitle">I can predict your final number through mysterious calculations!</p>
+        
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+        
+        <div class="instruction-box" id="instructionBox">
+            <div class="step-counter" id="stepCounter">1</div>
+            <div class="instruction-text" id="instructionText">
+                Choose your lucky number between 1 and 10! 🍀
+            </div>
+        </div>
+        
+        <button class="btn" id="nextBtn" onclick="nextStep()">I Got My Number!</button>
+        <button class="btn" id="restartBtn" onclick="restartGame()" style="display: none;">Play Again</button>
+        
+        <div class="result-box" id="resultBox">
+            <div>🎯 Your final number is: <span id="finalResult"></span></div>
+            <div style="font-size: 0.9em; margin-top: 10px; opacity: 0.9;">
+                Did I read your mind correctly? ✨
+            </div>
+        </div>
+        
+        <!-- Creator credit -->
+        <div class="creator-credit">
+            <p>Created by <strong>Bhavik Kaladiya </strong> 💻</p>
+            <p>Email id <strong>bksony894@gmail.com </strong> </p>
+            <p>Phone No. <strong>+91 9265492946 </strong> </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
